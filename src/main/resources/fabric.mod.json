@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "tlm_kiss_addon",
+  "version": "${version}",
+  "name": "TLM Kiss Addon",
+  "description": "自定义按键亲吻东方女仆：爱心粒子 + 平滑镜头放大后恢复。",
+  "authors": ["Grok"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.tlmkiss.TlmKissAddon"],
+    "client": ["com.example.tlmkiss.client.TlmKissClient"]
+  },
+  "mixins": ["tlm_kiss_addon.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "\~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "touhou_little_maid": "*"
+  }
+}
